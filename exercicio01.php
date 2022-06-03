@@ -2,7 +2,7 @@
 <form method="post">
     <input type="text" name="n1" placeholder="Insira um número">
     <input type="text" name="n2" placeholder="Insira outro número"><br>
-    
+ 
     <label><input type="radio" name="soma"> Somar</label><br>
     <label><input type="radio" name="subtracao"> Subtrair</label><br>
     <label><input type="radio" name="multiplicacao"> Multiplicar</label><br>
