@@ -31,14 +31,23 @@ $alunos = [
     }
 
     .container{
-        width: 960px;
+        width: 100vw;
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
-    .container table{
-        width: 100;
+    .container .tabela{
+        width: 50%;
         border:1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        
+    }
+
+    .container .tabela .tabela-cabecalho tr td{
+        background-color: darkgrey;  
     }
 
 </style>
@@ -46,15 +55,15 @@ $alunos = [
 <h1>Criando Tabela com Foreach</h1>
 
 <div class="container">
-    <table>
-        <thead>
+    <table class="tabela" cellspacing="0">
+        <thead class="tabela-cabecalho">
             <tr>
                 <td><strong>Nome</strong></td>
                 <td><strong>email</strong></td>
                 <td><strong>telefone</strong></td>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tabela-conteudo">
     
             <?php
                 foreach($alunos as $cadaAluno){
