@@ -4,14 +4,14 @@
 
 
 $banda1 = [
-    'banda' => "SOAD",
-    'musicas_conhecidas' => 10,
-    'conheci_em' => 2010,
+    "SOAD",
+    10,
+    2010,
 ];
 $banda2 = [
-    'banda' => 'Norvana',
-    'musicas_conhecidas' => 7,
-    'conheci_em' => 2008,
+    'Norvana',
+    7,
+    2008,
 ];
 
 
@@ -35,14 +35,14 @@ $banda2 = [
     </thead>
     <tbody>
         <tr>
-            <td> <?php echo $banda1['banda'] ?> </td>
-            <td> <?php echo $banda1['musicas_conhecidas'] ?> </td>
-            <td> <?php echo $banda1['conheci_em'] ?> </td>
+            <td> <?php echo $banda1[0] ?> </td>
+            <td> <?php echo $banda1[1] ?> </td>
+            <td> <?php echo $banda1[2] ?> </td>
         </tr>
         <tr>
-            <td> <?php echo $banda2['banda'] ?> </td>
-            <td> <?php echo $banda2['musicas_conhecidas'] ?> </td>
-            <td> <?php echo $banda2['conheci_em'] ?> </td>
+            <td> <?php echo $banda2[0] ?> </td>
+            <td> <?php echo $banda2[1] ?> </td>
+            <td> <?php echo $banda2[2] ?> </td>
         </tr>
     </tbody>
 </table>
